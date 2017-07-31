@@ -245,3 +245,7 @@ ModelManifest.xml
 Content
 Scripts
 fonts
+
+# TypeScript files
+ASPTypeScriptSample/src/**/*.js
+ASPTypeScriptSample/src/**/*.map
