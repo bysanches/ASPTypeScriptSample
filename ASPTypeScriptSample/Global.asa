@@ -1,0 +1,10 @@
+<!--METADATA
+TYPE="TypeLib"
+NAME="Microsoft ActiveX Data Objects 2.6 Library"
+UUID="{00000206-0000-0010-8000-00AA006D2EA4}"
+VERSION="2.6"
+-->
+
+<script language="JScript" runat="server">
+    Application('connectionString') = '';
+</script>
