@@ -1,0 +1,27 @@
+﻿<h2>Edit student {{ name }}</h2>
+
+<form id="studentForm" method="POST" action="?c=student&a=save">
+    <input type="hidden" name="id" value="{{ id }}">
+
+    <div class="form-group">
+        <label for="name" class="form-control-label">Name</label>
+        <input type="text" name="name" id="name" class="form-control" value="{{ name }}" required maxlength="50" placeholder="Name">
+    </div>
+
+    <div class="form-group">
+        <label for="document" class="form-control-label">Document</label>
+        <input type="text" name="document" id="document" class="form-control" value="{{ document }}" required maxlength="11" data-rule-minlength="11" data-rule-digits="true" placeholder="Document">
+        <small class="form-text text-muted">Digits only.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="birthdate" class="form-control-label">Birth Date</label>
+        <input type="text" name="birthdate" id="birthdate" class="form-control" value="{{ formatDate birthdate }}" required maxlength="10" data-rule-dateita="true" placeholder="Birth Date">
+        <small class="form-text text-muted">Format: dd/mm/yyyy</small>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="?c=student&a=details&id={{ id }}" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>

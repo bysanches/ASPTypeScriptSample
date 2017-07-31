@@ -200,6 +200,12 @@
 
         /** Destroys a user session. */
         Abandon(): void;
+        
+        /**
+         * Retrieves an item from the Contents collection.
+         * @param key Identifier that indicates which item to retrieve from the collection.
+         */
+        (key: string): any;
     }
 
     interface IRequestDictionary {

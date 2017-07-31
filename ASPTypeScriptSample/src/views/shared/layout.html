@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/site.css">
+</head>
+<body>
+    <nav class="navbar navbar-toggleable navbar-light bg-faded mb-4">
+        <a class="navbar-brand" href="?">Classic ASP + TypeScript</a>
+
+        <div class="navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav">
+                {{ navItem "Students" "student" "index" }}
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        {{{ body }}}
+    </div>
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/tether.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.validate.min.js"></script>
+    <script src="Scripts/additional-methods.min.js"></script>
+    {{{ scripts }}}
+</body>
+</html>

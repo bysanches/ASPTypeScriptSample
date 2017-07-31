@@ -1,0 +1,23 @@
+﻿<h2>Student {{ name }}</h2>
+
+<table class="table">
+    <tr>
+        <th scope="row">Name</th>
+        <td>{{ name }}</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Document</th>
+        <td>{{ document }}</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Birth Date</th>
+        <td>{{ formatDate birthdate }}</td>
+    </tr>
+</table>
+
+<div>
+    <a href="?c=student" class="btn btn-secondary">Back</a>
+    <a href="?c=student&a=edit&id={{ id }}" class="btn btn-secondary">Edit</a>
+</div>

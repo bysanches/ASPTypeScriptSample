@@ -1,0 +1,1 @@
+﻿declare function setSession(key: string, val: any): void;

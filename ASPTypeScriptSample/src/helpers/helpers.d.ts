@@ -1,0 +1,1 @@
+﻿declare function ToVBDate(jsDate: Date): any;

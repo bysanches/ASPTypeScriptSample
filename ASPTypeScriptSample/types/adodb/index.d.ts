@@ -93,6 +93,9 @@
         /** Moves the record pointer to the next record */
         MoveNext(): void;
 
+        /** Returns a value that describes if the Recordset object is open, closed, connecting, executing or retrieving data */
+        State: number;
+
         /**
          * Opens a database element that gives you access to records in a table, the results of a query,
          * or to a saved Recordset

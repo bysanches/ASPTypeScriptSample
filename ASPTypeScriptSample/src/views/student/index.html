@@ -1,0 +1,31 @@
+﻿<h1>Students</h1>
+
+{{>filter term}}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Document</th>
+            <th>Birth Date</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each items}}
+            <tr>
+                <td>
+                    <a href="?c=student&a=details&id={{ id }}">{{ name }}</a>
+                </td>
+                <td>{{ document }}</td>
+                <td>{{ formatDate birthdate }}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<div>
+    <a href="?c=student&a=create" class="btn btn-secondary">Create</a>
+    <a href="?c=student&a=reset">reset</a> |
+    <a href="?c=student&a=debug">debug</a>
+</div>
